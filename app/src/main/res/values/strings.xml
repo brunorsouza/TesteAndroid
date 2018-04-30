@@ -6,4 +6,6 @@
     <string name="thanks">Obrigado!</string>
     <string name="success_sent">Mensagem enviada\ncom sucesso :)</string>
     <string name="send_new_message">Enviar nova mensagem</string>
+    <string name="txt_unauthorized">Não autorizado</string>
+    <string name="investment_action">Investir</string>
 </resources>

@@ -10,4 +10,10 @@
         <item name="textAllCaps">false</item>
     </style>
 
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="colorControlNormal">@color/gray_text</item>
+        <item name="colorControlActivated">@color/gray_text</item>
+        <item name="colorControlHighlight">@color/gray_text</item>
+    </style>
+
 </resources>

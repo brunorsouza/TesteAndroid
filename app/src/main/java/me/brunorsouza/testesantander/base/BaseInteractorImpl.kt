@@ -46,15 +46,4 @@ open class BaseInteractorImpl {
         return fromJson
     }
 
-
-    fun convetJsonToObjct(array: JsonArray, clazz: Class<*>): List<Any> {
-        val gson = Gson()
-        val listT = ArrayList<Any>()
-        for (i in 0 until array.size()) {
-            val fromJson = gson.fromJson(array.get(i), clazz)
-            listT.add(fromJson)
-        }
-        return listT
-    }
-
 }

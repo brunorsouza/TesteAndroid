@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/assetDetailView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingRight="32dp"
+            android:paddingEnd="32dp"
+            android:paddingLeft="32dp"
+            android:paddingStart="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:text="@string/investment"/>
+
+            <me.brunorsouza.testesantander.investment.view.custom.HeaderLayout
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <me.brunorsouza.testesantander.investment.view.custom.RiskScaleLayout
+                android:id="@+id/riskScale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <me.brunorsouza.testesantander.investment.view.custom.MoreInfoLayout
+                android:id="@+id/moreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="16dp"/>
+
+            <me.brunorsouza.testesantander.investment.view.custom.InfoListView
+                android:id="@+id/infoList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <me.brunorsouza.testesantander.investment.view.custom.InfoListView
+                android:id="@+id/infoDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/investment_action"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/background_button_selector"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

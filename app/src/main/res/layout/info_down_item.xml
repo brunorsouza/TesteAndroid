@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Taxa de administraçao"
+        android:textColor="@color/gray_text"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/txtMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baixar"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/ic_down_arrow"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="4dp"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimary"/>
+
+</FrameLayout>

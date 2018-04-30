@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.TextInputLayout android:id="@+id/textInputLayoutTextCell"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textInputLayout"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+    android:backgroundTint="@color/gray_text"
+    android:textColorHint="@color/gray_text"
+    android:theme="@style/TextAppearance.App.TextInputLayout">
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/editTextTextCell"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray_text"
-        android:textCursorDrawable="@drawable/cursor_color"/>
+        android:drawableTint="@color/gray_text"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursor_color" />
 
 </android.support.design.widget.TextInputLayout>
